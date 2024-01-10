@@ -5,12 +5,12 @@ import Script from 'next/script';
 import { Hero3 } from 'components/blocks/hero';
 import { Blog1 } from 'components/blocks/blog';
 import { Facts1 } from 'components/blocks/facts';
-import { About3 } from 'components/blocks/about';
+import { About3Custom } from 'components/blocks/about';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer5 } from 'components/blocks/footer';
 import { Contact1 } from 'components/blocks/contact';
 import { Pricing3 } from 'components/blocks/pricing';
-import { Process3 } from 'components/blocks/process';
+import { Process3Custom } from 'components/blocks/process';
 import { Services4 } from 'components/blocks/services';
 import { CTA4 } from 'components/blocks/call-to-action';
 import { Testimonial2 } from 'components/blocks/testimonial';
@@ -41,14 +41,14 @@ const Demo3: NextPage = () => {
             {/* ========== what we do section ========== */}
             {/* <Services4 /> */}
             {/* ========== how it works section ========== */}
-            <Process3 image="/img/photos/cleaning/about9@2x.jpg" />
+            <Process3Custom image="/img/photos/cleaning/about9@2x.jpg" />
             {/* ========== why choose us section ========== */}
-            <About3 image="/img/photos/cleaning/about7@2x.jpg" />
+            <About3Custom image="/img/photos/cleaning/about7@2x.jpg" />
             <div className="mx-5"></div>
             {/* ========== how it works section ========== */}
-            <Process3 image="/img/photos/cleaning/about9@2x.jpg" />
+            <Process3Custom image="/img/photos/cleaning/about9@2x.jpg" />
             {/* ========== why choose us section ========== */}
-            <About3 image="/img/photos/cleaning/about9@2x.jpg" />
+            <About3Custom image="/img/photos/cleaning/about9@2x.jpg" />
           </div>
         </section>
 

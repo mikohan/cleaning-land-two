@@ -3,7 +3,10 @@ import { ProcessList2 } from 'components/reuseable/process-list';
 // -------- data -------- //
 import { processList4 } from 'data/process';
 
-const Process3: FC = () => {
+type IProps = {
+  image: string;
+};
+const Process3: FC<IProps> = ({ image }) => {
   return (
     <div className="row gy-10 gy-sm-13 gx-lg-3 mb-16 mb-md-18 align-items-center">
       <div className="col-md-8 col-lg-6 position-relative">
@@ -15,7 +18,7 @@ const Process3: FC = () => {
         />
 
         <figure className="rounded">
-          <img src="/img/photos/about7.jpg" srcSet="/img/photos/about7@2x.jpg 2x" alt="process" />
+          <img src={image} width={1150} height={1100} alt="process" />
         </figure>
       </div>
 

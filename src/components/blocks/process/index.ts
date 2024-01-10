@@ -1,6 +1,7 @@
 import Process1 from './Process1';
 import Process2 from './Process2';
 import Process3 from './Process3';
+import Process3Custom from './Process3Custom';
 import Process4 from './Process4';
 import Process5 from './Process5';
 import Process6 from './Process6';
@@ -23,6 +24,7 @@ export {
   Process1,
   Process2,
   Process3,
+  Process3Custom,
   Process4,
   Process5,
   Process6,

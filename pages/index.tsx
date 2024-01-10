@@ -39,11 +39,16 @@ const Demo3: NextPage = () => {
         <section className="wrapper bg-light">
           <div className="container pt-19 pt-md-21 pb-16 pb-md-18">
             {/* ========== what we do section ========== */}
-            <Services4 />
+            {/* <Services4 /> */}
             {/* ========== how it works section ========== */}
-            <Process3 />
+            <Process3 image="/img/photos/cleaning/about9@2x.jpg" />
             {/* ========== why choose us section ========== */}
-            <About3 />
+            <About3 image="/img/photos/cleaning/about7@2x.jpg" />
+            <div className="mx-5"></div>
+            {/* ========== how it works section ========== */}
+            <Process3 image="/img/photos/cleaning/about9@2x.jpg" />
+            {/* ========== why choose us section ========== */}
+            <About3 image="/img/photos/cleaning/about9@2x.jpg" />
           </div>
         </section>
 

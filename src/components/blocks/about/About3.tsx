@@ -1,7 +1,12 @@
 import { FC } from 'react';
 import AccordionList from 'components/common/AccordionList';
+import Image from 'next/image';
 
-const About3: FC = () => {
+interface IProps {
+  image: string;
+}
+
+const About3: FC<IProps> = ({ image }: IProps) => {
   return (
     <div className="row gy-10 gy-sm-13 gx-lg-3 align-items-center">
       <div className="col-md-8 col-lg-6 offset-lg-1 order-lg-2 position-relative">
@@ -16,7 +21,7 @@ const About3: FC = () => {
         />
 
         <figure className="rounded">
-          <img src="/img/photos/about9.jpg" srcSet="/img/photos/about9@2x.jpg 2x" alt="about" />
+          <Image src={image} width={1150} height={1100} alt="about" />
         </figure>
       </div>
 

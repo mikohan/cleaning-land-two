@@ -23,12 +23,12 @@ const Demo3: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-dark">
-        <Navbar
+        {/* <Navbar
           search
           logoAlt="logo-light"
           navClassName="navbar navbar-expand-lg center-nav transparent navbar-dark"
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
-        />
+        /> */}
       </header>
 
       <main className="content-wrapper">

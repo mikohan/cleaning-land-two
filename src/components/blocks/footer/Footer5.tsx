@@ -16,7 +16,7 @@ const Footer5: FC = () => {
               <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
 
               <p className="mb-4">
-                © 2022 Sandbox. <br className="d-none d-lg-block" />
+                © 2024 Playa Cleaning. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
 
@@ -27,9 +27,9 @@ const Footer5: FC = () => {
           <div className="col-md-4 col-lg-3">
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Get in Touch</h4>
-              <address className="pe-xl-15 pe-xxl-17">Moonshine St. 14/05 Light City, London, United Kingdom</address>
+              <address className="pe-xl-15 pe-xxl-17">13163 Fountain Park Dr, Los Angeles CA, 90094</address>
               <NextLink title="info@email.com" href="mailto:#" />
-              <br /> 00 (123) 456 78 90
+              <br /> +1(213) 598-7763
             </div>
           </div>
 
@@ -59,7 +59,7 @@ const Footer5: FC = () => {
                     className="validate dark-fields"
                     id="mc-embedded-subscribe-form2"
                     name="mc-embedded-subscribe-form"
-                    action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
+                    action=""
                   >
                     <div id="mc_embed_signup_scroll2">
                       <div className="mc-field-group input-group form-floating">

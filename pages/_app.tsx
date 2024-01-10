@@ -50,8 +50,8 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Playa Cleaning - Los Angeles</title>
       </Head>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-VEKFEDVDY0" />
-      <Script id="google-analytics">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-VEKFEDVDY0" strategy="beforeInteractive" />
+      <Script id="google-analytics" strategy="beforeInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

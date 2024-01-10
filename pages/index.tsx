@@ -30,17 +30,6 @@ const Demo3: NextPage = () => {
           navClassName="navbar navbar-expand-lg center-nav transparent navbar-dark"
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
         /> */}
-        import Script from 'next/script'
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-VEKFEDVDY0" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-VEKFEDVDY0');
-        `}
-        </Script>
       </header>
 
       <main className="content-wrapper">

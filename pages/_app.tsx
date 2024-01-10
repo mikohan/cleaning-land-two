@@ -20,6 +20,7 @@ import 'glightbox/dist/css/glightbox.css';
 import 'plugins/scrollcue/scrollCue.css';
 // Bootstrap and custom scss
 import 'assets/scss/style.scss';
+import Script from 'next/script';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
@@ -49,10 +50,21 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Playa Cleaning - Los Angeles</title>
       </Head>
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-VEKFEDVDY0" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-VEKFEDVDY0');
+        `}
+      </Script>
 
       <ThemeProvider>
         {/* <div className="page-loader" /> */}
-        {loading ? <div className="page-loader" /> : <Component {...pageProps} />}
+        {/* {loading ? <div className="page-loader" /> : <Component {...pageProps} />} */}
+        <Component {...pageProps} />
       </ThemeProvider>
     </Fragment>
   );

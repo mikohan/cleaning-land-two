@@ -1,1 +1,25 @@
 // Use this to write your custom SCSS
+// styles for button call to action
+.full-width {
+    width: 100%;
+}
+@include media-breakpoint-up(md) {
+    .full-width{
+    width: 50%;
+    }
+}
+.button-text {
+    color: white;
+}
+.price-custom {
+    text-align: center;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+    color: $error;
+}
+.price-custom-green {
+    text-align: center;
+    font-size: 3rem;
+    color: $success;
+    font-weight: bold;
+}

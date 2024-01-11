@@ -1,6 +1,7 @@
 import { FC } from 'react';
 import FigureImage from 'components/reuseable/FigureImage';
 import Image from 'next/image';
+import { slideInDownAnimate } from 'utils/animation';
 
 const Contact1: FC = () => {
   return (
@@ -31,8 +32,8 @@ const Contact1: FC = () => {
           <div>
             <h5 className="mb-1">Address</h5>
             <address>
-              Moonshine St. 14/05 Light City, <br className="d-none d-md-block" />
-              London, United Kingdom
+              13163 Fountain Park Dr, <br className="d-none d-md-block" />
+              Playa Vista, CA 90094
             </address>
           </div>
         </div>
@@ -45,7 +46,7 @@ const Contact1: FC = () => {
           </div>
           <div>
             <h5 className="mb-1">Phone</h5>
-            <p>00 (123) 456 78 90</p>
+            <p>+1 (213) 598-7763</p>
           </div>
         </div>
 
@@ -59,10 +60,15 @@ const Contact1: FC = () => {
             <h5 className="mb-1">E-mail</h5>
             <p className="mb-0">
               <a href="mailto:sandbox@email.com" className="link-body">
-                sandbox@email.com
+                angaralabllc@gmail.com
               </a>
             </p>
           </div>
+        </div>
+        <div style={slideInDownAnimate('1200ms')} className="pt-10">
+          <button style={{ fontSize: '120%' }} className="btn btn-lg rounded gradient-6 full-width button-text">
+            Contact Us!
+          </button>
         </div>
       </div>
     </div>

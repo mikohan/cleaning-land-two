@@ -1,5 +1,6 @@
 import Testimonial1 from './Testimonial1';
 import Testimonial2 from './Testimonial2';
+import Testimonial2Custom from './Testimonial2Custom';
 import Testimonial3 from './Testimonial3';
 import Testimonial4 from './Testimonial4';
 import Testimonial5 from './Testimonial5';
@@ -53,5 +54,6 @@ export {
   Testimonial24,
   Testimonial25,
   Testimonial26,
-  Testimonial27
+  Testimonial27,
+  Testimonial2Custom
 };

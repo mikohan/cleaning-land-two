@@ -15,7 +15,7 @@ const Hero3: FC = () => {
         <div className="row gx-0 gy-10 align-items-center">
           <div className="col-lg-6">
             <h1 className="display-1 text-white mb-4" style={slideInDownAnimate('600ms')}>
-              Playa Cleaning is:
+              Playa Cleaning Los Angeles:
               <br />
               <span className="text-primary text-nowrap">
                 <Typewriter
@@ -36,7 +36,9 @@ const Hero3: FC = () => {
             </p>
 
             <div style={slideInDownAnimate('1200ms')}>
-              <a className="btn btn-lg btn-primary rounded gradient-6">Get estimation!</a>
+              <button style={{ fontSize: '120%' }} className="btn btn-lg rounded gradient-6 full-width button-text">
+                Contact Us!
+              </button>
             </div>
           </div>
 

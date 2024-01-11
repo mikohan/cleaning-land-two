@@ -12,10 +12,15 @@ const CTA4: FC = () => {
           <div className="col-lg-8">
             <h2 className="fs-16 text-uppercase text-white mb-3 text-line">Join Our Community</h2>
             <h3 className="display-4 mb-5 mb-6 text-white pe-xxl-18">
-              We are trusted by over 50+ clients. Join them by using our services and make your home better.
+              We are trusted by over 100+ clients. Join them by using our services and make your home better.
             </h3>
 
-            <NextLink href="#" title="Contact Us" className="btn btn-white rounded mb-0 text-nowrap" />
+            <button
+              style={{ color: 'white', fontSize: '120%', fontWeight: 600 }}
+              className="btn full-width gradient-6 rounded mb-0 text-nowrap"
+            >
+              Contact Us
+            </button>
           </div>
         </div>
       </div>

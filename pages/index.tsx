@@ -1,20 +1,17 @@
 import { NextPage } from 'next';
 import { Fragment } from 'react';
-import Script from 'next/script';
 // -------- custom component -------- //
-import { Hero3, Hero3Custom } from 'components/blocks/hero';
-import { Blog1, Blog1Custom } from 'components/blocks/blog';
+import { Hero3Custom } from 'components/blocks/hero';
+import { Blog1Custom } from 'components/blocks/blog';
 import { Facts1 } from 'components/blocks/facts';
 import { About3Custom } from 'components/blocks/about';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer5 } from 'components/blocks/footer';
-import { Contact1, Contact1Custom } from 'components/blocks/contact';
-import { Pricing3, Pricing3Custom } from 'components/blocks/pricing';
+import { Contact1Custom } from 'components/blocks/contact';
+import { Pricing3Custom } from 'components/blocks/pricing';
 import { Process3Custom } from 'components/blocks/process';
-import { Services4 } from 'components/blocks/services';
 import { CTA4, CTA4Custom } from 'components/blocks/call-to-action';
-import { Testimonial2 } from 'components/blocks/testimonial';
-import NextLink from 'components/reuseable/links/NextLink';
+import { Testimonial2Custom } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
 
 const Demo3: NextPage = () => {
@@ -71,7 +68,7 @@ const Demo3: NextPage = () => {
         <section className="wrapper bg-light angled upper-end lower-start">
           <div className="container py-16 py-md-18 position-relative">
             {/* ========== client reviews section ========== */}
-            <Testimonial2 />
+            <Testimonial2Custom />
             {/* ========== our pricing section ========== */}
             <Pricing3Custom />
             {/* ========== contact section ========== */}

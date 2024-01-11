@@ -4,9 +4,10 @@ import Image from 'next/image';
 
 interface IProps {
   image: string;
+  line1: string;
 }
 
-const About3: FC<IProps> = ({ image }: IProps) => {
+const About3: FC<IProps> = ({ image, line1 }: IProps) => {
   return (
     <div className="row gy-10 gy-sm-13 gx-lg-3 align-items-center">
       <div className="col-md-8 col-lg-6 offset-lg-1 order-lg-2 position-relative">
@@ -27,7 +28,7 @@ const About3: FC<IProps> = ({ image }: IProps) => {
 
       <div className="col-lg-5">
         <h2 className="fs-16 text-uppercase text-line text-primary mb-3">Why Choose Us?</h2>
-        <h3 className="display-4 mb-7">A few reasons why our valued customers choose us.</h3>
+        <h3 className="display-4 mb-7">{line1}</h3>
         {/* <AccordionList /> */}
       </div>
     </div>

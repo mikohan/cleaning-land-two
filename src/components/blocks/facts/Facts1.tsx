@@ -13,9 +13,9 @@ const Facts1: FC = () => {
 
           <div className="col-lg-8 mt-lg-2">
             <div className="row align-items-center counter-wrapper gy-6 text-center">
-              <Counter1 title="Completed Projects" number={1000} />
+              <Counter1 title="Completed Projects" number={100} />
               <Counter1 title="Happy Clients" number={500} />
-              <Counter1 title="Awards Won" number={150} />
+              <Counter1 title="Hapiness level" number={1000} />
             </div>
           </div>
         </div>

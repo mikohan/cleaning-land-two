@@ -3,16 +3,16 @@ import { Fragment } from 'react';
 import Script from 'next/script';
 // -------- custom component -------- //
 import { Hero3, Hero3Custom } from 'components/blocks/hero';
-import { Blog1 } from 'components/blocks/blog';
+import { Blog1, Blog1Custom } from 'components/blocks/blog';
 import { Facts1 } from 'components/blocks/facts';
 import { About3Custom } from 'components/blocks/about';
 import { Navbar } from 'components/blocks/navbar';
 import { Footer5 } from 'components/blocks/footer';
-import { Contact1 } from 'components/blocks/contact';
-import { Pricing3 } from 'components/blocks/pricing';
+import { Contact1, Contact1Custom } from 'components/blocks/contact';
+import { Pricing3, Pricing3Custom } from 'components/blocks/pricing';
 import { Process3Custom } from 'components/blocks/process';
 import { Services4 } from 'components/blocks/services';
-import { CTA4 } from 'components/blocks/call-to-action';
+import { CTA4, CTA4Custom } from 'components/blocks/call-to-action';
 import { Testimonial2 } from 'components/blocks/testimonial';
 import NextLink from 'components/reuseable/links/NextLink';
 import PageProgress from 'components/common/PageProgress';
@@ -41,26 +41,29 @@ const Demo3: NextPage = () => {
             {/* ========== what we do section ========== */}
             {/* <Services4 /> */}
             {/* ========== how it works section ========== */}
-            <Process3Custom image="/img/photos/cleaning/003.jpg" />
+            <Process3Custom image="/img/photos/cleaning/003.jpg" line1="We'll take care of the bathrooms." />
             {/* ========== why choose us section ========== */}
-            <About3Custom image="/img/photos/cleaning/002.jpg" />
+            <About3Custom image="/img/photos/cleaning/002.jpg" line1="We can move things to clean under!" />
             <div className="mb-15"></div>
             {/* ========== how it works section ========== */}
-            <Process3Custom image="/img/photos/cleaning/about9@2x.jpg" />
+            <Process3Custom image="/img/photos/cleaning/ceiling.jpg" line1="Your walls and ceilings will be clean" />
             {/* ========== why choose us section ========== */}
-            <About3Custom image="/img/photos/cleaning/004.jpg" />
+            <About3Custom image="/img/photos/cleaning/004.jpg" line1="You'll breath with a clean air!" />
             <div className="mb-15"></div>
-            <Process3Custom image="/img/photos/cleaning/005.jpg" />
+            <Process3Custom image="/img/photos/cleaning/005.jpg" line1="We can take care of your kitchen!" />
             {/* ========== why choose us section ========== */}
-            <About3Custom image="/img/photos/cleaning/006.jpg" />
+            <About3Custom
+              image="/img/photos/cleaning/006.jpg"
+              line1="Every corner in your house will be dust free and clean!"
+            />
           </div>
         </section>
 
         {/* ========== call to action section ========== */}
-        <CTA4 />
+        <CTA4Custom />
 
         {/* ========== case studies section ========== */}
-        <Blog1 />
+        <Blog1Custom />
 
         {/* ========== company facts section ========== */}
         <Facts1 />
@@ -70,9 +73,9 @@ const Demo3: NextPage = () => {
             {/* ========== client reviews section ========== */}
             <Testimonial2 />
             {/* ========== our pricing section ========== */}
-            <Pricing3 />
+            <Pricing3Custom />
             {/* ========== contact section ========== */}
-            <Contact1 />
+            <Contact1Custom />
           </div>
         </section>
       </main>

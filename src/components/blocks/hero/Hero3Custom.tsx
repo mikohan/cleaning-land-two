@@ -32,7 +32,7 @@ const Hero3: FC = () => {
               className="lead fs-24 lh-sm text-white mb-7 pe-md-18 pe-lg-0 pe-xxl-15"
               style={slideInDownAnimate('900ms')}
             >
-              Let's make your home shainy clean!
+              Let's make your home shiny clean!
             </p>
 
             <div style={slideInDownAnimate('1200ms')}>

@@ -2,7 +2,7 @@ import { NextPage } from 'next';
 import { Fragment } from 'react';
 import Script from 'next/script';
 // -------- custom component -------- //
-import { Hero3 } from 'components/blocks/hero';
+import { Hero3, Hero3Custom } from 'components/blocks/hero';
 import { Blog1 } from 'components/blocks/blog';
 import { Facts1 } from 'components/blocks/facts';
 import { About3Custom } from 'components/blocks/about';
@@ -34,21 +34,25 @@ const Demo3: NextPage = () => {
 
       <main className="content-wrapper">
         {/* ========== hero section ========== */}
-        <Hero3 />
+        <Hero3Custom />
 
         <section className="wrapper bg-light">
           <div className="container pt-19 pt-md-21 pb-16 pb-md-18">
             {/* ========== what we do section ========== */}
             {/* <Services4 /> */}
             {/* ========== how it works section ========== */}
-            <Process3Custom image="/img/photos/cleaning/about9@2x.jpg" />
+            <Process3Custom image="/img/photos/cleaning/003.jpg" />
             {/* ========== why choose us section ========== */}
-            <About3Custom image="/img/photos/cleaning/about7@2x.jpg" />
-            <div className="mx-5"></div>
+            <About3Custom image="/img/photos/cleaning/002.jpg" />
+            <div className="mb-15"></div>
             {/* ========== how it works section ========== */}
             <Process3Custom image="/img/photos/cleaning/about9@2x.jpg" />
             {/* ========== why choose us section ========== */}
-            <About3Custom image="/img/photos/cleaning/about9@2x.jpg" />
+            <About3Custom image="/img/photos/cleaning/004.jpg" />
+            <div className="mb-15"></div>
+            <Process3Custom image="/img/photos/cleaning/005.jpg" />
+            {/* ========== why choose us section ========== */}
+            <About3Custom image="/img/photos/cleaning/006.jpg" />
           </div>
         </section>
 

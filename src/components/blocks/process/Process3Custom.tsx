@@ -26,9 +26,9 @@ const Process3: FC<IProps> = ({ image }) => {
         <h2 className="fs-16 text-uppercase text-line text-primary mb-3">How It Works?</h2>
         <h3 className="display-4 mb-7">Here are the 3 working steps on success.</h3>
 
-        {processList4.map((item) => (
+        {/* {processList4.map((item) => (
           <ProcessList2 {...item} key={item.no} className="icon btn btn-block btn-soft-primary pe-none me-5" />
-        ))}
+        ))} */}
       </div>
     </div>
   );

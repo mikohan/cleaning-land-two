@@ -28,7 +28,7 @@ const About3: FC<IProps> = ({ image }: IProps) => {
       <div className="col-lg-5">
         <h2 className="fs-16 text-uppercase text-line text-primary mb-3">Why Choose Us?</h2>
         <h3 className="display-4 mb-7">A few reasons why our valued customers choose us.</h3>
-        <AccordionList />
+        {/* <AccordionList /> */}
       </div>
     </div>
   );

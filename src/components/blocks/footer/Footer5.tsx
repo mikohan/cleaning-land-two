@@ -13,13 +13,17 @@ const Footer5: FC = () => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="Logo in footer" />
-
+              <Image
+                className="mb-4"
+                src="/img/photos/cleaning/logo@2x.png"
+                width={268}
+                height={52}
+                alt="Logo in footer"
+              />
               <p className="mb-4">
                 © 2024 Playa Cleaning. <br className="d-none d-lg-block" />
                 All rights reserved.
               </p>
-
               <SocialLinks className="nav social social-white" />
             </div>
           </div>

@@ -1,5 +1,6 @@
 import { NextPage } from 'next';
 import { Fragment } from 'react';
+import NextLink from 'components/reuseable/links/NextLink';
 // -------- custom component -------- //
 import { Hero3Custom } from 'components/blocks/hero';
 import { Blog1Custom } from 'components/blocks/blog';
@@ -10,7 +11,7 @@ import { Footer5 } from 'components/blocks/footer';
 import { Contact1Custom } from 'components/blocks/contact';
 import { Pricing3Custom } from 'components/blocks/pricing';
 import { Process3Custom } from 'components/blocks/process';
-import { CTA4, CTA4Custom } from 'components/blocks/call-to-action';
+import { CTA4Custom } from 'components/blocks/call-to-action';
 import { Testimonial2Custom } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
 
@@ -21,12 +22,12 @@ const Demo3: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-dark">
-        {/* <Navbar
+        <Navbar
           search
           logoAlt="logo-light"
           navClassName="navbar navbar-expand-lg center-nav transparent navbar-dark"
           button={<NextLink title="Contact" href="#" className="btn btn-sm btn-primary rounded" />}
-        /> */}
+        />
       </header>
 
       <main className="content-wrapper">

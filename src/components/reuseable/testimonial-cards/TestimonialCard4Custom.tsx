@@ -53,7 +53,7 @@ const TestimonialCard4: FC<TestimonialCard4Props> = ({
     <div className={`card shadow-lg ${className}`}>
       <div className="row gx-0">
         <div
-          style={{ backgroundImage: 'url(/img/photos/cleaning/tm1.jpg)' }}
+          style={{ backgroundImage: 'url(/img/photos/cleaning/tm1-wu.jpg)' }}
           className="col-lg-6 image-wrapper bg-image bg-cover rounded-top rounded-lg-start"
         />
 

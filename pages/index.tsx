@@ -65,15 +65,15 @@ const Demo3: NextPage = () => {
         {/* ========== case studies section ========== */}
         <Blog1Custom />
 
+        {/* ========== client reviews section ========== */}
         <div className="mb-18"></div>
+        <Testimonial2Custom />
         <Team1Custom />
         {/* ========== company facts section ========== */}
         <Facts1 />
 
         <section className="wrapper bg-light angled upper-end lower-start">
           <div className="container py-16 py-md-18 position-relative">
-            {/* ========== client reviews section ========== */}
-            <Testimonial2Custom />
             {/* ========== our pricing section ========== */}
             <Pricing3Custom />
             {/* ========== contact section ========== */}

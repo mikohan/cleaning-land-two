@@ -13,9 +13,6 @@ const Testimonial2: FC = () => {
         className="shape rounded-circle bg-soft-primary rellax w-18 h-18"
         style={{ zIndex: 0, left: '-3rem', bottom: '-1rem' }}
       />
-      <div className="text-center">
-        <h3 className="mb-4 display-4">What our clients say</h3>
-      </div>
 
       <TestimonialCard4Custom />
     </div>

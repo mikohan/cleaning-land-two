@@ -3,26 +3,9 @@ import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app';
 import { Fragment, useEffect, useState } from 'react';
 import ThemeProvider from 'theme/ThemeProvider';
-
-// animate css
-import 'animate.css';
-// import swiper css
-import 'swiper/css';
-import 'swiper/css/free-mode';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/thumbs';
-// video player css
-import 'plyr-react/plyr.css';
-// glightbox css
-import 'glightbox/dist/css/glightbox.css';
-// custom scrollcue css
-import 'plugins/scrollcue/scrollCue.css';
-// Bootstrap and custom scss
-import 'assets/scss/style.scss';
 import Script from 'next/script';
 
-function MyApp({ Component, pageProps }: AppProps) {
+export function MyApp({ Component, pageProps }: AppProps) {
   const { pathname } = useRouter();
   const [loading, setLoading] = useState(true);
 
@@ -76,7 +59,7 @@ fbq('track', 'PageView');`}
         <img
           height="1"
           width="1"
-          style={{ display: 'none' }}
+          style="display:none"
           src="https://www.facebook.com/tr?id=311940005157178&ev=PageView&noscript=1"
         />
       </noscript>
@@ -89,5 +72,3 @@ fbq('track', 'PageView');`}
     </Fragment>
   );
 }
-
-export default MyApp;

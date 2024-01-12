@@ -7,23 +7,26 @@ const Modal: FC = () => {
   const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const credentials = {
-      service_id: 'service_28l37sa',
-      template_id: 'template_z37kom6',
-      user_id: '42Bbj0zJrwuCZtcHN',
+      service_id: 'service_kx7h89m',
+      template_id: 'template_c7pkimk',
+      user_id: 'yVAKDAno88CXUFJBv',
       template_params: {
-        email: phone,
+        phone: phone,
         to_name: 'Cleaners Manager'
       }
     };
 
     const apiUrl = 'https://api.emailjs.com/api/v1.0/email/send';
     const res = await axios.post(apiUrl, credentials);
-    document.getElementById('closeModal')?.click();
-    console.log(phone);
+    if (res.status == 200) {
+      document.getElementById('closeModal')?.click();
+      setPhone('');
+    } else {
+      console.error('NOT SEND!');
+    }
   };
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     setPhone(e.target.value);
-    console.log(phone);
   };
 
   return (

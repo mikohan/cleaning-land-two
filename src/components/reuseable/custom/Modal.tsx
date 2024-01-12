@@ -1,6 +1,18 @@
-import { FC, Fragment } from 'react';
+import { phone } from 'confing';
+import { FC, Fragment, useState, ChangeEvent, FormEvent } from 'react';
 
 const Modal: FC = () => {
+  const [phone, setPhone] = useState('');
+  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    document.getElementById('closeModal')?.click();
+    console.log(phone);
+  };
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setPhone(e.target.value);
+    console.log(phone);
+  };
+
   return (
     <Fragment>
       <button
@@ -15,46 +27,48 @@ const Modal: FC = () => {
         <div className="modal-dialog modal-dialog-centered modal-md">
           <div className="modal-content text-center">
             <div className="modal-body">
-              <button className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
+              <button id="closeModal" className="btn-close" data-bs-dismiss="modal" aria-label="Close" />
 
               <div className="row">
                 <div className="col-md-10 offset-md-1">
                   <figure className="mb-6">
-                    <img src="/img/illustrations/i7.png" srcSet="/img/illustrations/i7@2x.png 2x" alt="" />
+                    <img src="/img/illustrations/i7.png" srcSet="/img/illustrations/i7@2x.png 2x" alt="Modal image" />
                   </figure>
                 </div>
               </div>
-
               <h3>Join the mailing list and get %10 off</h3>
-
-              <p className="mb-6">
-                Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor
-                fringilla.
-              </p>
+              <div className="mb-6">
+                <p>Our phone number is</p>
+                <p>{phone}.</p>
+                <p>
+                  Text us please to get an estimation. Or just send us your phone number and we'll text you back ASAP.
+                </p>
+              </div>
 
               <div className="newsletter-wrapper">
                 <div className="row">
                   <div className="col-md-10 offset-md-1">
                     <div id="mc_embed_signup">
                       <form
-                        action="https://elemisfreebies.us20.list-manage.com/subscribe/post?u=aa4947f70a475ce162057838d&amp;id=b49ef47a9a"
-                        method="post"
+                        onSubmit={(e) => handleSubmit(e)}
                         id="mc-embedded-subscribe-form"
                         name="mc-embedded-subscribe-form"
                         className="validate"
-                        target="_blank"
+                        method="post"
                       >
                         <div id="mc_embed_signup_scroll">
                           <div className="mc-field-group input-group form-floating">
                             <input
-                              type="email"
-                              name="EMAIL"
+                              value={phone}
+                              onChange={handleChange}
+                              type="number"
+                              name="PHONE"
                               className="required email form-control"
-                              placeholder="Email Address"
-                              id="mce-EMAIL"
+                              placeholder="Phone Number"
+                              id="mce-phone"
                             />
                             <label htmlFor="mce-EMAIL" className="text-start">
-                              Email Address
+                              Phone Number
                             </label>
                             <input
                               type="submit"

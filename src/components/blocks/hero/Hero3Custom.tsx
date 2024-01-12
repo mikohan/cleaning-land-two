@@ -59,7 +59,7 @@ const Hero3: FC = () => {
               </a>
 
               <figure className="rounded shadow-lg">
-                <Image src="/img/photos/cleaning/hero.jpg" width={1150} height={1100} alt="hero" />
+                <Image src="/img/photos/cleaning/hero-text.jpg" width={1150} height={1100} alt="hero" />
               </figure>
             </div>
           </div>

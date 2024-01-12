@@ -31,14 +31,6 @@ const Modal: FC = () => {
 
   return (
     <Fragment>
-      <button
-        data-bs-toggle="modal"
-        data-bs-target="#modal-02"
-        className="btn btn-primary rounded-pill mx-1 mb-2 mb-md-0"
-      >
-        Subscription
-      </button>
-
       <div className="modal fade" id="modal-02" tabIndex={-1}>
         <div className="modal-dialog modal-dialog-centered modal-md">
           <div className="modal-content text-center">

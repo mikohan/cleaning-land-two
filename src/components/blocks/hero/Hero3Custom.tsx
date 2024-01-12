@@ -32,7 +32,7 @@ const Hero3: FC = () => {
               className="lead fs-24 lh-sm text-white mb-7 pe-md-18 pe-lg-0 pe-xxl-15"
               style={slideInDownAnimate('900ms')}
             >
-              Let's make your home shiny clean!
+              Let's make your home squeaky clean!
             </p>
 
             <div style={slideInDownAnimate('1200ms')}>
@@ -51,7 +51,7 @@ const Hero3: FC = () => {
             <div className="position-relative" style={slideInDownAnimate('0ms')}>
               <a
                 data-glightbox
-                href="/media/movie.mp4"
+                href="/media/cleaning_process.mp4"
                 className="btn btn-circle btn-primary btn-play ripple mx-auto mb-6 position-absolute"
                 style={{ top: '50%', left: '50%', transform: 'translate(-50%,-50%)', zIndex: 3 }}
               >

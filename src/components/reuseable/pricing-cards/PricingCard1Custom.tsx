@@ -24,8 +24,8 @@ const PricingCard1: FC<PricingCard1Props> = (props) => {
     <div className="pricing card shadow-lg">
       <div className="card-body pb-12">
         <div className="prices text-dark justify-content-center pb-16">
-          <div className="price-custom mb-6">$70</div>
-          <div className="price-custom-green">$40</div>
+          <div className="price-custom mb-6">$70/hr</div>
+          <div className="price-custom-green">$40/hr</div>
         </div>
         <ul className={`icon-list ${bulletBg ? 'bullet-bg' : ''} bullet-soft-primary mt-7 mb-8`}>
           {features.map((item, i) => (

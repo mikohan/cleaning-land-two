@@ -1,10 +1,23 @@
 import { phone } from 'confing';
 import { FC, Fragment, useState, ChangeEvent, FormEvent } from 'react';
+import axios from 'axios';
 
 const Modal: FC = () => {
   const [phone, setPhone] = useState('');
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const credentials = {
+      service_id: 'service_28l37sa',
+      template_id: 'template_z37kom6',
+      user_id: '42Bbj0zJrwuCZtcHN',
+      template_params: {
+        email: phone,
+        to_name: 'Cleaners Manager'
+      }
+    };
+
+    const apiUrl = 'https://api.emailjs.com/api/v1.0/email/send';
+    const res = await axios.post(apiUrl, credentials);
     document.getElementById('closeModal')?.click();
     console.log(phone);
   };

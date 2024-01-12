@@ -36,7 +36,12 @@ const Hero3: FC = () => {
             </p>
 
             <div style={slideInDownAnimate('1200ms')}>
-              <button style={{ fontSize: '120%' }} className="btn btn-lg rounded gradient-6 full-width button-text">
+              <button
+                style={{ fontSize: '120%' }}
+                className="btn btn-lg rounded gradient-6 full-width button-text"
+                data-bs-toggle="modal"
+                data-bs-target="#modal-02"
+              >
                 Contact Us!
               </button>
             </div>

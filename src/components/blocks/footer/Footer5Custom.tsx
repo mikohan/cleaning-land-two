@@ -13,7 +13,12 @@ const Footer5: FC = () => {
         <div className="row gy-6 gy-lg-0">
           <div className="col-md-4 col-lg-3">
             <div className="widget">
-              <img className="mb-4" src="/img/logo-light.png" srcSet="/img/logo-light@2x.png 2x" alt="" />
+              <img
+                className="mb-4"
+                src="/img/photos/cleaning/logo-light.png"
+                srcSet="/img/photos/cleaning/logo-light@2x.png 2x"
+                alt="Logo in Footer"
+              />
 
               <p className="mb-4">
                 © 2024 Playa Cleaning. <br className="d-none d-lg-block" />
@@ -37,11 +42,9 @@ const Footer5: FC = () => {
             <div className="widget">
               <h4 className="widget-title text-white mb-3">Learn More</h4>
               <ul className="list-unstyled  mb-0">
-                {footerNav.map(({ title, url }) => (
-                  <li key={title}>
-                    <NextLink title={title} href={url} />
-                  </li>
-                ))}
+                <li>
+                  <NextLink title="Privicy Policy" href="/policy" />
+                </li>
               </ul>
             </div>
           </div>

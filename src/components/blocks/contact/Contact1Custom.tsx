@@ -14,7 +14,7 @@ const Contact1: FC = () => {
         />
 
         <figure className="rounded">
-          <Image src="/img/photos/cleaning/contact.jpg" width={575} height={550} alt="Contact us" />
+          <Image src="/img/photos/cleaning/google-map.jpg" width={1150} height={1100} alt="Contact us" />
         </figure>
       </div>
 
@@ -66,7 +66,12 @@ const Contact1: FC = () => {
           </div>
         </div>
         <div style={slideInDownAnimate('1200ms')} className="pt-10">
-          <button style={{ fontSize: '120%' }} className="btn btn-lg rounded gradient-6 full-width button-text">
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#modal-02"
+            style={{ fontSize: '120%' }}
+            className="btn btn-lg rounded gradient-6 full-width button-text"
+          >
             Contact Us!
           </button>
         </div>

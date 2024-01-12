@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import Carousel from 'components/reuseable/Carousel';
-import { BlogCard1, BlogCard1Custom } from 'components/reuseable/blog-cards';
+import { BlogCard1Custom } from 'components/reuseable/blog-cards';
 // -------- carousel breakpoint obj -------- //
 import carouselBreakpoints from 'utils/carouselBreakpoints';
 // -------- data -------- //

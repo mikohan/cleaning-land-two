@@ -18,6 +18,8 @@ const CTA4: FC = () => {
             <button
               style={{ color: 'white', fontSize: '120%', fontWeight: 600 }}
               className="btn full-width gradient-6 rounded mb-0 text-nowrap"
+              data-bs-toggle="modal"
+              data-bs-target="#modal-02"
             >
               Contact Us
             </button>

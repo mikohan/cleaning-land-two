@@ -6,14 +6,16 @@ import { Hero3Custom } from 'components/blocks/hero';
 import { Blog1Custom } from 'components/blocks/blog';
 import { Facts1 } from 'components/blocks/facts';
 import { About3Custom } from 'components/blocks/about';
-import { Navbar } from 'components/blocks/navbar';
-import { Footer5 } from 'components/blocks/footer';
+import { NavbarCustom } from 'components/blocks/navbar';
+import { Footer5, Footer5Custom } from 'components/blocks/footer';
 import { Contact1Custom } from 'components/blocks/contact';
 import { Pricing3Custom } from 'components/blocks/pricing';
 import { Process3Custom } from 'components/blocks/process';
 import { CTA4Custom } from 'components/blocks/call-to-action';
 import { Testimonial2Custom } from 'components/blocks/testimonial';
 import PageProgress from 'components/common/PageProgress';
+import { Team1Custom, Team5Custom } from 'components/blocks/team';
+import Modal from 'components/reuseable/custom/Modal';
 
 const Demo3: NextPage = () => {
   return (
@@ -22,7 +24,7 @@ const Demo3: NextPage = () => {
 
       {/* ========== header section ========== */}
       <header className="wrapper bg-dark">
-        <Navbar
+        <NavbarCustom
           search
           logoAlt="logo-light"
           navClassName="navbar navbar-expand-lg center-nav transparent navbar-dark"
@@ -63,6 +65,8 @@ const Demo3: NextPage = () => {
         {/* ========== case studies section ========== */}
         <Blog1Custom />
 
+        <div className="mb-18"></div>
+        <Team1Custom />
         {/* ========== company facts section ========== */}
         <Facts1 />
 
@@ -79,7 +83,8 @@ const Demo3: NextPage = () => {
       </main>
 
       {/* ========== footer section ========== */}
-      <Footer5 />
+      <Footer5Custom />
+      <Modal />
     </Fragment>
   );
 };

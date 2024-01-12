@@ -3,6 +3,7 @@ import Footer2 from './Footer2';
 import Footer3 from './Footer3';
 import Footer4 from './Footer4';
 import Footer5 from './Footer5';
+import Footer5Custom from './Footer5Custom';
 import Footer6 from './Footer6';
 import Footer7 from './Footer7';
 import Footer8 from './Footer8';
@@ -43,5 +44,6 @@ export {
   Footer19,
   Footer20,
   Footer21,
-  Footer22
+  Footer22,
+  Footer5Custom
 };

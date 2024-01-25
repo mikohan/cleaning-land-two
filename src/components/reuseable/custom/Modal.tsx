@@ -1,4 +1,4 @@
-import { phone } from 'confing';
+import { phone as phone_number } from 'confing';
 import { FC, Fragment, useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
 
@@ -44,13 +44,11 @@ const Modal: FC = () => {
                   </figure>
                 </div>
               </div>
-              <h3>Join the mailing list and get %10 off</h3>
+              <h3>Send you phone number and get your quote ASAP.</h3>
               <div className="mb-6">
-                <p>Our phone number is</p>
-                <p>{phone}.</p>
-                <p>
-                  Text us please to get an estimation. Or just send us your phone number and we'll text you back ASAP.
-                </p>
+                <p>Or just call us:</p>
+                <p className="h3 fw-bold">{phone_number}.</p>
+                <p className="h3 fw-bolder">Or Send Your Phone</p>
               </div>
 
               <div className="newsletter-wrapper">
@@ -71,7 +69,7 @@ const Modal: FC = () => {
                               onChange={handleChange}
                               type="number"
                               name="PHONE"
-                              className="required email form-control"
+                              className="required email form-control border border-primary"
                               placeholder="Phone Number"
                               id="mce-phone"
                             />

@@ -114,7 +114,7 @@ const Modal: FC = () => {
                       </div>
                     </div>
 
-                    <h3>Join the mailing list and get %10 off</h3>
+                    <h3>Send us you phone</h3>
 
                     <p className="mb-6">
                       Nullam quis risus eget urna mollis ornare vel eu leo. Donec ullamcorper nulla non metus auctor

@@ -56,6 +56,11 @@ const Demo3: NextPage = () => {
               image="/img/photos/cleaning/006.jpg"
               line1="Every corner in your house will be dust free and clean!"
             />
+            <div className="mb-15"></div>
+            <Process3Custom
+              image="/img/photos/cleaning/vicky_review@2x.jpg"
+              line1="One of our happy Clients - Victoria A."
+            />
           </div>
         </section>
 

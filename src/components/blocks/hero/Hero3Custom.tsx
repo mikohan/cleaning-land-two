@@ -49,8 +49,8 @@ const Hero3: FC = () => {
             <div className="mt-8" style={slideInDownAnimate('1200ms')}>
               <Link
                 href="/media/playa_vcard.vcf"
-                style={{ fontSize: '120%' }}
-                className="btn btn-lg rounded gradient-6 full-width button-text"
+                style={{ fontSize: '120%', textDecoration: 'underline' }}
+                // className="btn btn-lg rounded gradient-6 full-width button-text"
               >
                 Save Our Contact for Later!
               </Link>

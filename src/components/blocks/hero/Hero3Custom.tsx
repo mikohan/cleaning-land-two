@@ -52,7 +52,7 @@ const Hero3: FC = () => {
                 style={{ fontSize: '120%' }}
                 className="btn btn-lg rounded gradient-6 full-width button-text"
               >
-                Save Our Contact Now!
+                Save Our Contact for Later!
               </Link>
             </div>
           </div>

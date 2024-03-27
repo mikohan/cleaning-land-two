@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 import Image from 'next/image';
 // -------- custom hook -------- //
 import useLightBox from 'hooks/useLightBox';
+import Link from 'next/link';
 
 const Hero3: FC = () => {
   // used for lightbox
@@ -44,6 +45,15 @@ const Hero3: FC = () => {
               >
                 Contact Us!
               </button>
+            </div>
+            <div className="mt-8" style={slideInDownAnimate('1200ms')}>
+              <Link
+                href="/media/playa_vcard.vcf"
+                style={{ fontSize: '120%' }}
+                className="btn btn-lg rounded gradient-6 full-width button-text"
+              >
+                Save Our Contact Now!
+              </Link>
             </div>
           </div>
 

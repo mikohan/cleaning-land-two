@@ -97,13 +97,13 @@ const Modal: FC = () => {
                         </div>
 
                         <div className="mt-8">
-                          <Link
+                          <a
                             href="/media/playa_vcard.vcf"
                             style={{ fontSize: '120%', textDecoration: 'underline' }}
                             // className="btn btn-lg rounded gradient-6 full-width button-text"
                           >
                             Save Our Contact for Later!
-                          </Link>
+                          </a>
                         </div>
                       </form>
                     </div>

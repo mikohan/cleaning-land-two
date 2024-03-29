@@ -1,6 +1,7 @@
 import { phone as phone_number } from 'confing';
 import { FC, Fragment, useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
+import Link from 'next/link';
 
 const Modal: FC = () => {
   const [phone, setPhone] = useState('');
@@ -93,6 +94,16 @@ const Modal: FC = () => {
                           </div>
 
                           <div className="clear" />
+                        </div>
+
+                        <div className="mt-8">
+                          <Link
+                            href="/media/playa_vcard.vcf"
+                            style={{ fontSize: '120%', textDecoration: 'underline' }}
+                            // className="btn btn-lg rounded gradient-6 full-width button-text"
+                          >
+                            Save Our Contact for Later!
+                          </Link>
                         </div>
                       </form>
                     </div>

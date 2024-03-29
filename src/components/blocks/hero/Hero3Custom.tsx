@@ -48,7 +48,7 @@ const Hero3: FC = () => {
             </div>
           </div>
 
-          <div className="mt-8" style={slideInDownAnimate('1200ms')}>
+          {/* <div className="mt-8" style={slideInDownAnimate('1200ms')}>
             <Link
               href="/media/playa_vcard.vcf"
               style={{ fontSize: '120%', textDecoration: 'underline' }}
@@ -56,7 +56,7 @@ const Hero3: FC = () => {
             >
               Save Our Contact for Later!
             </Link>
-          </div>
+          </div> */}
 
           <div className="col-lg-5 offset-lg-1 mb-n18" data-cues="slideInDown">
             <div className="position-relative" style={slideInDownAnimate('0ms')}>

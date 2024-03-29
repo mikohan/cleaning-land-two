@@ -46,17 +46,16 @@ const Hero3: FC = () => {
                 Contact Us!
               </button>
             </div>
-            <div
-              className="mt-8" //style={slideInDownAnimate('1200ms')}
+          </div>
+
+          <div className="mt-8" style={slideInDownAnimate('1200ms')}>
+            <Link
+              href="/media/playa_vcard.vcf"
+              style={{ fontSize: '120%', textDecoration: 'underline' }}
+              // className="btn btn-lg rounded gradient-6 full-width button-text"
             >
-              <Link
-                href="/media/playa_vcard.vcf"
-                style={{ fontSize: '120%', textDecoration: 'underline' }}
-                // className="btn btn-lg rounded gradient-6 full-width button-text"
-              >
-                Save Our Contact for Later!
-              </Link>
-            </div>
+              Save Our Contact for Later!
+            </Link>
           </div>
 
           <div className="col-lg-5 offset-lg-1 mb-n18" data-cues="slideInDown">

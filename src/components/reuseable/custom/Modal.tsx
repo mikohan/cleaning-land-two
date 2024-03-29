@@ -1,7 +1,6 @@
-import { phone as phone_number } from 'confing';
+import { phone as phone_number, phone_link } from 'confing';
 import { FC, Fragment, useState, ChangeEvent, FormEvent } from 'react';
 import axios from 'axios';
-import Link from 'next/link';
 
 const Modal: FC = () => {
   const [phone, setPhone] = useState('');
@@ -48,8 +47,12 @@ const Modal: FC = () => {
               <h3>Send you phone number and get your quote ASAP.</h3>
               <div className="mb-6">
                 <p>Or just call us:</p>
-                <p className="h3 fw-bold">{phone_number}.</p>
-                <p className="h3 fw-bolder">Or Send Your Phone</p>
+                <p className="h3 fw-bold">
+                  <a style={{ textDecoration: 'underline' }} href={`tel:${phone_link}`}>
+                    {phone_number}.
+                  </a>
+                </p>
+                <p className="h3 fw-bolder">Or let us call you back</p>
               </div>
 
               <div className="newsletter-wrapper">

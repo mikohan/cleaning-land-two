@@ -5,10 +5,10 @@ type SocialLinksProps = { className?: string };
 // ========================================================
 
 const links = [
-  { id: 1, icon: 'uil uil-twitter', url: 'https://twitter.com/' },
-  { id: 2, icon: 'uil uil-facebook-f', url: 'https://facebook.com/' },
-  { id: 3, icon: 'uil uil-instagram', url: 'https://www.instagram.com/' },
-  { id: 4, icon: 'uil uil-youtube', url: 'https://www.youtube.com/@AngaraCleaningServices' }
+  // { id: 0, icon: 'uil uil-twitter', url: 'https://twitter.com/' },
+  { id: 1, icon: 'uil uil-facebook-f', url: 'https://www.facebook.com/profile.php?id=61559201872996' },
+  { id: 2, icon: 'uil uil-instagram', url: 'https://www.instagram.com/playa_cleaning' },
+  { id: 3, icon: 'uil uil-youtube', url: 'https://www.youtube.com/@PlayaCleaningUS' }
 ];
 
 const SocialLinks: FC<SocialLinksProps> = ({ className = 'nav social social-white mt-4' }) => {

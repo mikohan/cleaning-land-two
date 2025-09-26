@@ -49,6 +49,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Playa Cleaning - Los Angeles</title>
+        <meta name="facebook-domain-verification" content="5n08jjnpb8hsxgr21e3c7n0jl57jt4" />
       </Head>
       <Script src="https://www.googletagmanager.com/gtag/js?id=G-VEKFEDVDY0" strategy="beforeInteractive" />
       <Script id="google-analytics" strategy="beforeInteractive">

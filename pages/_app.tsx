@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Partytown } from '@qwik.dev/partytown/react';
 import { useRouter } from 'next/router';
 import type { AppProps } from 'next/app';
 import { Fragment, useEffect, useState } from 'react';
@@ -50,9 +51,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Playa Cleaning - Los Angeles</title>
         <meta name="facebook-domain-verification" content="5n08jjnpb8hsxgr21e3c7n0jl57jt4" />
+        <Partytown debug forward={['dataLayer.push']} />
       </Head>
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-VEKFEDVDY0" strategy="beforeInteractive" />
-      <Script id="google-analytics" strategy="beforeInteractive">
+      <Script src="https://www.googletagmanager.com/gtag/js?id=G-VEKFEDVDY0" type="text/partytown" />
+      <Script id="google-analytics" type="text/partytown">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -61,7 +63,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           gtag('config', 'G-VEKFEDVDY0');
         `}
       </Script>
-      <Script id="fb-pixel" strategy="beforeInteractive">
+      <Script id="fb-pixel" type="text/partytown">
         {`!function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
 n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -83,7 +85,7 @@ fbq('track', 'PageView');`}
         />
       </noscript>
 
-      <Script id="yandex" type="text/javascript" strategy="beforeInteractive">
+      <Script id="yandex" type="text/partytown">
         {`
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();

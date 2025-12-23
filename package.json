@@ -5,12 +5,14 @@
   "scripts": {
     "dev": "next dev -p 3002",
     "lint": "next lint",
-    "build": "next build",
+    "build": "npm run partytown && next build",
     "start": "next start -p 3002",
-    "sass": "sass --no-source-map src/assets/scss:public/css"
+    "sass": "sass --no-source-map src/assets/scss:public/css",
+    "partytown": "partytown copylib public/~partytown"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
+    "@qwik.dev/partytown": "^0.11.2",
     "animate.css": "^4.1.1",
     "axios": "^1.6.5",
     "bootstrap": "^5.3.0",

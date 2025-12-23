@@ -1,4 +1,5 @@
 import { FC } from 'react';
+import Image from 'next/image';
 import { ProcessList2 } from 'components/reuseable/process-list';
 // -------- data -------- //
 import { processList4 } from 'data/process';
@@ -19,7 +20,7 @@ const Process3: FC<IProps> = ({ image, line1 }) => {
         />
 
         <figure className="rounded">
-          <img src={image} width={1150} height={1100} alt="process" />
+          <Image src={image} width={1150} height={1100} alt="process" />
         </figure>
       </div>
 

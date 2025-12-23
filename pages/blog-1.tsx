@@ -1,4 +1,9 @@
-import Plyr from 'plyr-react';
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr-react'), {
+  ssr: false // Disable server-side rendering for this component
+});
+
 import Image from 'next/image';
 import { NextPage } from 'next';
 import { Fragment } from 'react';

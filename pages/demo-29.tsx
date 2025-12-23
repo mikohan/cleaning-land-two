@@ -1,6 +1,11 @@
 import { NextPage } from 'next';
 import { Fragment } from 'react';
-import Plyr from 'plyr-react';
+
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr-react'), {
+  ssr: false // Disable server-side rendering for this component
+});
 // -------- custom component -------- //
 import { FAQ8 } from 'components/blocks/faq';
 import { Hero29 } from 'components/blocks/hero';

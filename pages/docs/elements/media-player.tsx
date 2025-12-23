@@ -1,5 +1,10 @@
 import { FC } from 'react';
-import Plyr from 'plyr-react';
+
+import dynamic from 'next/dynamic';
+
+const Plyr = dynamic(() => import('plyr-react'), {
+  ssr: false // Disable server-side rendering for this component
+});
 import DocLayout from 'components/layouts/DocLayout';
 import CodeHighlight from 'components/reuseable/CodeHighlight';
 // -------- markups -------- //

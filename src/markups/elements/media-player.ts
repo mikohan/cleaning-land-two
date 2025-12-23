@@ -1,5 +1,6 @@
 const htmlMarkup = `import Plyr from 'plyr-react';
 
+
 <Plyr
   options={{ loadSprite: true, clickToPlay: true }}
   source={{ type: 'video', sources: [{ src: '/media/movie.mp4', provider: 'html5' }] }}

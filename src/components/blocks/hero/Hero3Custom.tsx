@@ -70,7 +70,14 @@ const Hero3: FC = () => {
               </a>
 
               <figure className="rounded shadow-lg">
-                <Image src="/img/photos/cleaning/hero-text.jpg" width={1150} height={1100} alt="hero" />
+                <Image
+                  src="https://ik.imagekit.io/angara/hero.jpg?w=538"
+                  //  src="/img/photos/cleaning/hero-text.jpg"
+                  width={1150}
+                  height={1100}
+                  alt="hero"
+                  priority
+                />
               </figure>
             </div>
           </div>

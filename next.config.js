@@ -17,21 +17,34 @@ const nextConfig = {
       }
     ]
   },
-  headers: [
-    {
-      key: 'Cross-Origin-Embedder-Policy',
-      value: 'credentialless' // or 'require-corp'
-    },
-    {
-      key: 'Cross-Origin-Opener-Policy',
-      value: 'same-origin'
-    },
-    // Add this if still having issues
-    {
-      key: 'Cross-Origin-Resource-Policy',
-      value: 'cross-origin'
-    }
-  ]
+  // headers: [
+  //   {
+  //     key: 'Cross-Origin-Embedder-Policy',
+  //     value: 'credentialless' // or 'require-corp'
+  //   },
+  //   {
+  //     key: 'Cross-Origin-Opener-Policy',
+  //     value: 'same-origin'
+  //   },
+  //   // Add this if still having issues
+  //   {
+  //     key: 'Cross-Origin-Resource-Policy',
+  //     value: 'cross-origin'
+  //   }
+  // ],
+  async rewrites() {
+    return [
+      {
+        // This catches the request from the worker
+        source: '/proxy/gtm/:path*',
+        destination: 'https://www.googletagmanager.com/:path*'
+      },
+      {
+        source: '/proxy/fb/:path*',
+        destination: 'https://connect.facebook.net/:path*'
+      }
+    ];
+  }
 };
 
 module.exports = nextConfig;

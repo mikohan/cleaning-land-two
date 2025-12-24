@@ -50,26 +50,44 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Playa Cleaning - Los Angeles</title>
+        <Partytown
+          debug={true}
+          forward={['dataLayer.push', 'fbq', 'ym']}
+          resolveUrl={(url) => {
+            const origin = self.location.origin; // Workers use 'self' instead of 'window'
+
+            if (url.hostname === 'www.googletagmanager.com') {
+              // Prevent infinite loops if URL is already proxied
+              if (url.pathname.startsWith('/proxy/gtm')) return url;
+
+              return new URL(`/proxy/gtm${url.pathname}${url.search}`, origin);
+            }
+
+            if (url.hostname === 'connect.facebook.net') {
+              if (url.pathname.startsWith('/proxy/fb')) return url;
+
+              return new URL(`/proxy/fb${url.pathname}${url.search}`, origin);
+            }
+
+            return url;
+          }}
+        />
         <meta name="facebook-domain-verification" content="5n08jjnpb8hsxgr21e3c7n0jl57jt4" />
-        <Partytown debug forward={['dataLayer.push']} />
       </Head>
-      <Script id="google-tagmanager" type="text/partytown">
-        {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-PQNQ5K5R');
-        `}
-      </Script>
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-PQNQ5K5R"
-          height="0"
-          width="0"
-          style={{ display: 'none', visibility: 'hidden' }}
-        ></iframe>
-      </noscript>
+      <Script
+        id="gtm"
+        type="text/partytown"
+        dangerouslySetInnerHTML={{
+          __html: `
+              window.dataLayer = window.dataLayer || [];
+              (function(w,d,s,l,i){w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PQNQ5K5R');
+            `
+        }}
+      />
       <Script id="fb-pixel" type="text/partytown">
         {`!function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
